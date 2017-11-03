@@ -1,0 +1,11 @@
+{
+  "name": "team2984",
+  "version": "0.0.1",
+  "private": false,
+  "description": "FRC Team 2984 Website",
+  "author": "Team 2984",
+  "license": "MIT",
+  "repository": "https://github.com/FRCTeam2984/website",
+  "dependencies": {},
+  "scripts": {}
+}
