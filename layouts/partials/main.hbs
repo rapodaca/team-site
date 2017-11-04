@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    {{#if description}}
+      <meta name="description" content="{{description}}">
+    {{/if}}
+
+    {{#block "meta"}}{{/block}}
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/global.css">
+    
+    {{#block "style"}}{{/block}}
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    {{#if title}}
+      <title>{{title}} - FRC Team 2984</title>
+    {{else}}
+      <title>FRC Team 2984</title>
+    {{/if}}
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Vikings Robotics</a></h1>
+      <nav>
+        <ol>
+          <li><a href="/">Nav 1</a></li>
+          <li><a href="/">Nav 2</a></li>
+          <li><a href="/">Nav 3</a></li>
+          <li><a href="/">Nav 4</a></li>
+          <li><a href="/">Nav 5</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      {{#block "body"}}{{/block}}
+    </main>
+    <footer>
+      <p class="copyright">&copy;2017 Vikings Robotics</p>
+    </footer>
+    {{#block "end-scripts"}}{{/block}}
+    {{>analytics}}
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{{#extend "main"}}
+  {{#content "style"}}
+    <link rel="stylesheet" href="/css/index.css">
+  {{/content}}
+  {{#content "body"}}
+    <article>
+      <header>
+          {{#if hide-title}}
+          
+          {{else}}
+            <h1>{{title}}</h1>
+          {{/if}}
+      </header>
+      <div class="main">
+        {{{contents}}}
+      </div>
+    </article>
+  {{/content}}
+{{/extend}}
