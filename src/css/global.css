@@ -61,6 +61,11 @@ body>footer {
   padding: 3em 0 1em 0em;
   text-align: center;
 }
+.block-internal-logo{
+  display: block;
+
+
+}
 
 @media only screen and (min-width: 900px) {
   body {
