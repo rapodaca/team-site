@@ -37,6 +37,10 @@ body>header li:after {
   content: " |"
 }
 
+body>header li:last-child:after {
+  content: '';
+}
+
 body>header nav {
   margin-bottom: 1em;
   text-align: center;
