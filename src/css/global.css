@@ -4,7 +4,7 @@ html * {
 }
 
 html body {
-  font-family: sans-serif;
+  font-family: fantasy;
   color: #303030;
 }
 
@@ -57,7 +57,7 @@ body>main, {
 }
 
 body>footer {
-  font-size: 90%;
+  font-size: 70%;
   padding: 3em 0 1em 0em;
   text-align: center;
 }
