@@ -8,7 +8,7 @@
   "repository": "https://github.com/FRCTeam2984/website",
   "dependencies": {
     "metalsmith": "2.3.0",
-    "metalsmith-collections": "git://github.com/metamolecular/metalsmith-collections.git",
+    "metalsmith-collections": "https://github.com/metamolecular/metalsmith-collections.git",
     "metalsmith-markdown": "0.2.1",
     "handlebars": "4.0.6",
     "metalsmith-permalinks": "0.5.0",
