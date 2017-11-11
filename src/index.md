@@ -6,6 +6,3 @@ footer: metalsmith-permalinks
 ---
 
 
-<div class =  "slideshow">
-
-</div>
