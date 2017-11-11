@@ -1,6 +1,10 @@
 {{#extend "main"}}
   {{#content "style"}}
-    <link rel="stylesheet" href="/css/index.css">
+  {{#if stylesheet }}
+    <link rel = "stylesheet" href = "/css/{{stylesheet}}.css">
+  {{else}}
+  {{/if}}
+    <!-- <link rel="stylesheet" href="/css/index.css"> -->
   {{/content}}
   {{#content "body"}}
     <article>
@@ -13,6 +17,7 @@
       </header>
       <div class="main">
         {{{contents}}}
+
       
     </article>
   {{/content}}
