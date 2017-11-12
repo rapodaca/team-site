@@ -5,4 +5,6 @@ hide-title: true
 footer: metalsmith-permalinks
 ---
 
+<div class="slideshow">
 
+</div>
