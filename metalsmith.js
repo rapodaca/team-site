@@ -16,12 +16,16 @@ const app = metalsmith(__dirname)
     gfm: true,
     smartypants: true
   }))
+  .use(permalinks({
+    relative: false,
+    pattern: ':slug'
+  }))
   .use(helpers())
   .use(layouts({
     engine: 'handlebars',
     directory: 'layouts',
     partials: 'layouts/partials'
-  }))
+  }));
 
 if (module.parent) {
   module.exports = app;
