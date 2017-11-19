@@ -12,6 +12,21 @@ process.env.TZ = 'Pacific';
 const app = metalsmith(__dirname)
   .source('./src')
   .destination('./build')
+  .use(collections({
+    posts: {
+      pattern: 'posts/*.md',
+      sortBy: function (a, b) {
+        return Date.parse(a.date) - Date.parse(b.date);
+      },
+      reverse: true
+    }
+  }))
+  .use(metadata([
+    {
+      pattern: 'posts/*.md',
+      metadata: { layout: 'index.hbs' }
+    }
+  ]))
   .use(markdown({
     gfm: true,
     smartypants: true
