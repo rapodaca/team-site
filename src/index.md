@@ -8,3 +8,7 @@ footer: metalsmith-permalinks
 <div class="slideshow">
 
 </div>
+
+<div class="captions">
+
+</div>
